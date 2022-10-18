@@ -10,7 +10,7 @@ pipeline {
 	  
     stage('Build Docker Image') {  
       steps{                     
-	bat '  docker build --tag idilassi/tuto-buildimage:$BUILD_NUMBER .'     
+	bat '  docker build -t idilassi/dp-alpine:latest '     
 	echo 'Build Image Completed'                
     }           
 } 
