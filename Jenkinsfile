@@ -10,7 +10,7 @@ pipeline {
 	  
     stage('Build Docker Image') {  
       steps{                     
-	sh 'sudo docker build -t idilassi/tuto-buildimage:$BUILD_NUMBER .'     
+	bat ' docker build -t idilassi/tuto-buildimage:$BUILD_NUMBER .'     
 	echo 'Build Image Completed'                
     }           
 } 
