@@ -1,4 +1,3 @@
-FROM tomcat
-USER root
-COPY  ProjectDockerImage.war /usr/local/tomcat/webapps/
-CMD ["catalina.sh","run"]
+FROM ubuntu
+
+RUN apt-get update && apt-get install vim
