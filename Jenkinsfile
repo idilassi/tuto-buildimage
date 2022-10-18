@@ -3,8 +3,8 @@ pipeline {
   stages {         
     stage("Git Checkout"){           
       steps{                
-	git credentialsId: 'github', url: 'https://github.com/idilassi/tuto-buildimage.git'                 
-	echo 'Git Checkout Completed'            
+git branch: 'main', credentialsId: 'credentilas-dockerhub', url: 'https://github.com/idilassi/tuto-buildimage.git'
+	      echo 'Git Checkout Completed'            
       }        
     }
 }
