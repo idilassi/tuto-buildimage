@@ -10,7 +10,7 @@ pipeline {
 	  
     stage('Build Docker Image') {  
       steps{                     
-	bat '  docker build -t jenkins-demo:${BUILD_NUMBER} .'     
+	bat '  docker build --tag idilassi/tuto-buildimage:$BUILD_NUMBER .'     
 	echo 'Build Image Completed'                
     }           
 } 
